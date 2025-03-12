@@ -715,7 +715,7 @@ local function InitializePins()
                                       end
                                     }
   }
-  local compassPinLayoutBookshelf = { maxDistance = compassMaxDistance, texture = GetPinTextureBookshelf(self),
+  local compassPinLayoutBookshelf = { maxDistance = compassMaxDistance, texture = GetPinTextureBookshelf(),
                                       sizeCallback = function(pin, angle, normalizedAngle, normalizedDistance)
                                         if zo_abs(normalizedAngle) > 0.25 then
                                           pin:SetDimensions(54 - 24 * zo_abs(normalizedAngle), 54 - 24 * zo_abs(normalizedAngle))
